@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="" th:href="@{/css/home.css}">
+
+    <title>KidsFashion</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img th:src="@{/images/creative-play.jpg}" alt="KidsFashion"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/home">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/cloths">Cloths for girls</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/boys">Cloths for boys</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/fashion">Fashion Accessories for kids</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/bags">Bags</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/caps&hats">Caps&Hats</a>
+          <div class="dropdown-divider"></div>
+          
+      </li>
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Age
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/0-2yrs">0-2 years</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="3-7yrs">3-7 years</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/7-12yrs">7-12 years</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/12+yrs">12+ years</a>
+          </div>
+      </li>
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Brand
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="liliput">LILIPUT</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="kapkids">KAPKIDS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/chicoo">CHICCO</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/ruff">RUFF</a>
+          </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about">About </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#service">Services</a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+      <a href="login" class="btn btn-light my-2 my-sm-0 mr-1" type="submit">Logout</a>
+      <a href="signup" class="btn btn-light my-2 my-sm-0" type="submit">Sign up</a>
+       
+    </form>
+  </div>
+  </nav>
+  </section>
+
+<!-- Slider -->
+<section>
+        <div id="slider">
+            <div id="headerslider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#headerslider" data-slide-to="0" class="active"></li>
+                    <li data-target="headerslider" data-slide-to="1"></li>
+                    <li data-target="#headerslider" data-slide-to="2"></li>
+                    
+                  
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img  th:src="@{/images/tırtıl_kids.jpg}" class="d-block img-fluid" alt="banner" height="500" width="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img th:src="@{/images/kids-clothing.jpg}" class="d-block img-fluid" alt="banner2" height="500" width="500">
+                        <div class="carousel-caption">
+                            <h5>Shop And Win</h5>
+                            <h2>Get Your Child's Favorite Fashion Products At Your Door Step</h2>
+                            <p>Available: RUFF, LILIPUT, KAPKIDS</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img th:src="@{/images/banner2-baby-top.jpg}" class="d-block img-fluid" alt="banner3" height="500" width="500">
+                        <div class="carousel-caption">
+                            <h5>Toys</h5>
+                            <h2>Starting Price at &#8377 190</h2>
+                            <h1>(Gift)</h1>
+                            <p>Available: Cloths for boys, girls, Footwear...</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="service" >
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="row service">
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                    </div>
+                    <h3>Free Delivery</h3>
+                    <p>"We don't want to push our ideas on to customers, 
+                        we simply want to make what they want."</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <i class="fa fa-reply" aria-hidden="true"></i>
+                    </div>
+                    <h3>Easy Return</h3>
+                    <p>“A goal without a plan is just a wish.”"</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <i class="fa fa-inr" aria-hidden="true"></i>
+                    </div>
+                    <h3>Pocket Friend</h3>
+                    <p>"An investment in knowledge pays the best interest." </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h3>Offers</h3>
+                    <p>"If you don’t know where you are going, you will probably end up somewhere else."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  
+    <div class="container2">
+    <h1>Team</h1>
+        <div class="hexagon">
+            <div class="shape">
+                <img th:src="@{/images/doll/bride.jpg}">
+                <div class="content">
+                    <div>
+                        <h2>LILIPUT</h2>
+                        <p>Always Deliver More Than Expected.
+                           </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="shape">
+                <img th:src="@{/images/doll/olaf.jpg}">
+                <div class="content">
+                    <div>
+                        <h2>RUFF</h2>
+                        <p>Customer Satisfaction Is Our Top Priority.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="shape">
+                <img th:src="@{/images/doll/mermaid.jpg}">
+                <div class="content">
+                    <div>
+                        <h2>CHICOO</h2>
+                        <p>Quality Is Remembered Long After The Price Is Forgotten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container form">
+    <form th:action="@{/contact}" th:object="${user}" method="post">>
+    <h1>Contact Us</h1>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="name" class="form-control" name="name" id="inputEmail3" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" id="inputPassword3" placeholder="Email">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Session</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="gridRadios1" value="help" name="help" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Help
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="gridRadios2" value="enquire" name="enquire">
+          <label class="form-check-label" for="gridRadios2">
+            Enquire
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="gridRadios3" value="feedback"  name="feedback">
+          <label class="form-check-label" for="gridRadios3">
+            Feedback
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">connect</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          connect with Email...
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
+</div>
+    
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">KidsFashion</h5>
+        <p>Your Kids Favorite and Suitable Fashion At Your Door Step...</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="/0-2yrs">0-2 yrs</a>
+          </li>
+          <li>
+            <a href="/3-7yrs">3-7 yrs</a>
+          </li>
+          <li>
+            <a href="/7-12yrs">7-12 yrs</a>
+          </li>
+          <li>
+            <a href="12+yrs">12+ yrs</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="/liliput">LILIPUT</a>
+          </li>
+          <li>
+            <a href="/ruff">RUFF</a>
+          </li>
+          <li>
+            <a href="/bags">Bags</a>
+          </li>
+          <li>
+            <a href="/cloths">Cloths for girls</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a th:href="@{/home}"> KidsFashion</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

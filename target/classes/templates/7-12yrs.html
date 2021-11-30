@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
+    
+<title>Insert title here</title>
+</head>
+<body>
+<!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img th:src="@{/images/creative-play.jpg}" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/home">Home</a>
+                </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About </a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+      <a href="login" class="btn btn-light my-2 my-sm-0 mr-1" type="submit">Login</a>
+      <a href="signup" class="btn btn-light my-2 my-sm-0" type="submit">Sign up</a>
+    </form>
+  </div>
+  </nav>
+  </section>
+ <div class="container"> 
+   <h1>7 - 12 yrs Fashion</h1>
+   <div id="alerts"></div>
+<div class="productcont mt-5">
+        <div class="product">
+        	<img th:src="@{/images/Bags/61Tz-SGyQrL._AC_SL1000_.jpg}" class="product-img">
+            <h3 class="productname">backpack</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$-199</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        <img th:src="@{/images/Bags/images (6).jpg}" class="product-img">
+            <h3 class="productname">Backpack</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$8.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Caps&Hats/H463f8372401446b2a1a74f7cdb307c56K.jpg}" class="product-img">
+            <h3 class="productname">Combo caps</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Bags/images (5).jpg}" class="product-img">
+            <h3 class="productname">Bag Combo(3 pc)</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Fashion Accessories for kids/watch.jpg}" class="product-img">
+            <h3 class="productname">watch</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Cloths for boys/boys.jpg}" class="product-img">
+            <h3 class="productname">Yellow Formal dress</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$100.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Fashion Accessories for kids/download.jpg}" class="product-img">
+            <h3 class="productname">watch</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Cloths for girls/images (9).jpg}" class="product-img">
+            <h3 class="productname">printed night dress</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Cloths for girls/images (10).jpg}" class="product-img">
+            <h3 class="productname">Printed Tops</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Cloths for girls/images (8).jpg}" class="product-img">
+            <h3 class="productname">pink top</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Cloths for boys/images (11).jpg}" class="product-img">
+            <h3 class="productname">Elegant Suite</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Cloths for girls/iii.jpg}" class="product-img">
+            <h3 class="productname">Dangri</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Cloths for boys/images (8).jpg}" class="product-img">
+            <h3 class="productname">Tshirt</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Fashion Accessories for kids/images.jpg}" class="product-img">
+            <h3 class="productname">watch</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Caps&Hats/308208.jpg}" class="product-img">
+            <h3 class="productname">cap</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Bags/71bAcnxyxVS._AC_SY355_.jpg}" class="product-img">
+            <h3 class="productname">Combo Bags</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        </div>
+        <div class="cart-container">
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>$<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <a href="/checkout"><button id="checkout">Checkout</button></a>
+          </div>
+        </div>
+</div>
+
+  
+ 
+<script type="text/javascript" th:src="@{/js/cart.js}"></script>
+</body>
+</html>
